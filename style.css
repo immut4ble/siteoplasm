@@ -1,0 +1,64 @@
+.rant-body {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+.rant-body p {
+    text-align: left;
+}
+
+.contracted {
+        display: none;
+}
+
+.expanded {
+        display: block;
+        font-size: 12px;
+}
+
+.mine {
+        color: grey !important;
+}
+
+
+body {
+        color: white;
+        background-color: #0C374D;
+}
+
+a {
+        color: white;
+        outline: none;
+}
+
+.navbar {
+        height: 30px;
+        width: 100%;
+}
+
+.container {
+        height: 80%;
+        width: 100%;
+}
+
+.left {
+        width: 20%;
+        height: 100%;
+        padding-top: 70px;
+        float: left;
+}
+
+.center {
+        width: 59%;
+        height: 100%;
+        float: left;
+}
+
+.right {
+        width: 20%;
+        height: 100%;
+        float: right;
+}
+
+

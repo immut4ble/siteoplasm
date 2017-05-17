@@ -1,12 +1,50 @@
 <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./syntax/solarized-dark.css">
+    <script src="./syntax/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class="rant-body">
     <div class="rant-body">
-    <h2>Idiots Scared of Idioms</h2>
-    <h5>Working title: driving off a cliff to avoid a pothole</h5>
-    <p>I wonder if morons in other industries do this..<br>
-    I hope so, it would make me feel better to think that somewhere theres</p>
+    <h2>Consistency is evil</h2>
+    <h5>The we've always done it this way complex.</h5>
+    <hr>
+    <p>It's such a strange mindset to me. This is how its been 
+    done so this is how we should keep doing it. A halfwit 
+    child can see the flaws in this logic, and yet, It's a 
+    common and popular opinion. Lets say theres a file like:
+<pre><code class="javascript">
+// Some globals
+var thisthing = 1;
+var thatthing = 2;
+
+// 500 more lines
+
+// The only use of those globals
+var dopefunc() {
+    return thisthing + thatthing;
+}
+
+// More crap
+</code></pre>
+    <p>Now the moment a developer opens this file he makes
+    a descision, to either:<br>A) Add more globals, to be consistent.
+    <br>or<br>B) Be a decent human being.<br>Yes, there are times
+    when consistency is important, I'm not arguing that. But 
+    if the only reason you have for an action is consistency
+    then you are probably making the wrong choice. It's
+    just such a universally accepted falsehood: <i>We've always
+    done it this way</i> is the same sort of reasoning as
+    Its good because its good. aka No reasoning at all.
+
+    <p>What's even worse is that people use this reasoning to
+    protect their insecurities. <i>"Yes X is <u>technically</u> best
+    practice, but is this file the patterns been to do Z so we should
+    stick with that</i> The annoying thing about arguments like
+    this isn't the fact that more often than not the person is
+    against X because they don't understand it, not because they
+    truly think that consistenly using a bad practice is a good idea.
+
     </div>
 </body>

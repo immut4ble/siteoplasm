@@ -10,6 +10,7 @@ var x = function(row) {
 }
 
 document.getElementById("rants").onclick = function() { x("rants") };
+document.getElementById("pages").onclick = function() { x("pages") };
 document.getElementById("essays").onclick = function() { x("essays") };
 document.getElementById("comics").onclick = function() { x("comics") };
 document.getElementById("blogs").onclick = function() { x("blogs") };

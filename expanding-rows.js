@@ -16,3 +16,7 @@ document.getElementById("comics").onclick = function() { x("comics") };
 document.getElementById("blogs").onclick = function() { x("blogs") };
 document.getElementById("talks").onclick = function() { x("talks") };
 document.getElementById("cheatsheets").onclick = function() { x("cheatsheets") };
+
+document.getElementById("rootkit").onclick = function () {
+        document.getElementById("rootkit").style.display = "none";
+}

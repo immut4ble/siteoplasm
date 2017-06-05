@@ -1,171 +1,37 @@
-<head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="./syntax/solarized-dark.css">
-        <script src="./syntax/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<body>
-        <div id="rootkit" class="rootkit">
-                <p>r00t1ng y0uR b0x...</p>
-                <div class="leftEye"></div>
-                <div class="rightEye"></div>
-                <div class="mouth"></div>
-        </div>
-        <div class="container">
-                <div class="left">
-                        <br>
-                        <a href="./home.html">[*] home</a>
-                        <br>
-                        <a id="rants" href="#">[*] rants</a>
-                        <div class="contracted rants">
-                                <a href="./shit-programmer.html">Why so many shit programmers</a><br>
-                                <a class="mine" href="./consistency-is-evil.html">Consistency is evil</a><br>
-                                <a class="mine" href="./idiots-scared-of-idioms.html">Idiots scared of idioms</a><br>
-                        </div>
-                        <br>
-                        <a id="essays" href="#">[*] essays</a>
-                        <div class="contracted essays">
-                                <a href="http://www.catb.org/esr/writings/unix-koans/">Unix Koans</a><br>
-                                <a href="http://www.paulgraham.com/diff.html">Why lisps different</a><br>
-                                <a href="http://www.paulgraham.com/quotes.html">Lisp quotes</a><br>
-                                <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">You don't Grok Vi</a><br>
-                                <a href="https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why func prog</a><br>
-                                <a href="http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/">Simple Func Javascript</a><br>
-                                <a href="https://blog.codinghorror.com/why-cant-programmers-program/">Why cant programmers program</a><br>
-                                <a href="https://www.norfolkwinters.com/vim-creep/">Vim Creep</a><br>
-                        </div>
-                        <br>
-                        <a id="blogs" href="#">[*] blogs</a>
-                        <div class="contracted blogs">
-                                <a href="https://codeblog.jonskeet.uk/">Jon Skeet</a><br>
-                                <a href="http://www.paulgraham.com/articles.html">Paul Graham</a><br>
-                                <a href="https://www.reddit.com/r/linusrants/">Linus Rants</a><br>
-                                <a href="https://news.ycombinator.com/">YCombinator</a><br>
-                        </div>
-                        <br>
-                        <a id="comics" href="#">[*] comics</a>
-                        <div class="contracted comics">
-                                <a href="http://www.dilbert.com">Dilbert</a><br>
-                                <a href="http://www.xkcd.com">Xkcd</a><br>
-                                <a href="http://www.turnoff.us">Turnoff</a><br>
-                                <a href="http://www.thedoghousediaries.com/">Dhd</a><br>
-                                <a href="http://geek-and-poke.com/">Geekandpoke</a><br>
-                        </div>
-                        <br>
-                        <a id="talks" href="#">[*] Talks</a>
-                        <div class="contracted talks">
-                                <a href="https://www.youtube.com/watch?v=yD2ekOEP9sU">The tao of bash</a><br>
-                                <a href="https://www.youtube.com/watch?v=BEQ3sRakIs0">Advanced C</a><br>
-                                <a href="https://www.youtube.com/watch?v=C4z_9F6nfS8">Your CSS is a mess</a><br>
-                                <a href="https://www.youtube.com/watch?v=AvgwKjTPMmM">Functional Prog: JS</a><br>
-                                <a href="https://www.youtube.com/watch?v=mS264h8KGwk">Immutable JS</a><br>
-                                <a href="https://www.youtube.com/watch?v=OFuDvqZmUrE">Code Transformation</a><br>
-                                <a href="https://www.youtube.com/watch?v=4NO83wZVT0A">Practical CLISP</a><br>
-                                <a href="https://www.youtube.com/watch?v=hEOVcLAPRG8">Production PROLOG</a><br>
-                                <a href="http://pyvideo.org/video/880/stop-writing-classes">Stop Using Classes</a><br>
-                                <a href="https://www.youtube.com/watch?v=WAitSilLDUA">Terminal Wispering</a><br>
-                                <a href="https://www.youtube.com/watch?v=JnczIyPXGfc">The Racket Manifesto</a><br>
-                                <a href="https://www.youtube.com/watch?v=VUhlNx_-wYk">Programming with Nothing</a><br>
-                                <a href="http://www.confreaks.com/videos/1287-rubyconf2012-y-not-adventures-in-functional-programming">Func Prog: Ruby</a><br>
-                                <a href="https://www.youtube.com/watch?v=QPqoFCHpLF4">Fun with Lambda Calculus</a><br>
-                                <a href="https://www.youtube.com/watch?v=6hBghQ-Ic_o">MiniTest: Awesome tests.</a><br>
-                                <a href="https://www.youtube.com/watch?v=IHP7P_HlcBk">Cool Ideas: scheme</a><br>
-                                <a href="https://www.youtube.com/watch?v=4XpnKHJAok8">Torvalds on GIT</a><br>
-                                <a href="https://www.youtube.com/watch?v=0IQlpFWTFbM">Kernel Hacking</a><br>
-                                <a href="https://www.youtube.com/watch?v=nesCaocNjtQ">Make simple tasks simple</a><br>
-                                <a href="https://www.youtube.com/watch?v=rFejpH_tAHM">Simplicity is Complicated</a><br>
-                                <a href="https://vimeo.com/36579366">Inventing on principle</a><br>
-                                <a href="https://www.youtube.com/watch?v=FvMuPtuvP5w">One hacker way</a><br>
-                                <a href="https://www.youtube.com/watch?v=B3b4tremI5o">Small is beautiful</a><br>
-                                <a href="https://www.youtube.com/watch?v=-E2tu3MqR24">Writing compilers</a><br>
-                                <a href="https://www.youtube.com/watch?v=RPxvx9OkNic">Writing interpreters</a><br>
-                                <a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4">Func Prog: Why, How</a><br>
-                                <a href="https://www.youtube.com/watch?v=XrNdvWqxBvA">Why Func Prog Matters</a><br>
-                                <a href="https://www.youtube.com/watch?v=QaSbL4sRff8">180 sites</a><br>
-                                <a href="https://www.youtube.com/watch?v=-UKEPd2ipEk">Killing microservices</a><br>
-                                <a href="https://www.youtube.com/watch?v=-UKEPd2ipEk">Neural Nets</a><br>
-                        </div>
-                        <br>
-                        <a id="cheatsheets" href="#">[*] Manuals</a>
-                        <div class="contracted cheatsheets">
-                                <a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim</a><br>
-                                <a href="http://andrewscala.com/vimscript/">Vimscript</a><br>
-                                <a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html">Emacs Lisp</a><br>
-                                <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html">Emacs Editor</a><br>
-                                <a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage">Sqlmap</a><br>
-                                <a href="https://wiki.archlinux.org/">Archlinux</a><br>
-                                <a href="http://www.disi.unige.it/person/MoggiE/PG1-13/bash.quickref.pdf">Bash QuickRef</a><br>
-                                <a href="https://stackoverflow.com/">SO</a><br>
-                        </div>
-                        <br>
-
-                        <a id="pages" href="#">[*] Pages</a>
-                        <div class="contracted pages">
-                                <a href="./pages/basic-css3-animations.html">ccs3 basic animations</a><br>
-                        </div>
-                        <br>
+<html>
+        <head>
+                   <link rel="stylesheet" href="./css/style.css">
+                   <script src="./js/main.js"></script> 
+                   <link rel="stylesheet" href="./css/code.css">
+                   <script src="./js/highlight.pack.js"></script>
+                   <script>hljs.initHighlightingOnLoad();</script>
+        </head>
+        </head>
+        <body>
+                <div id="nav" class="nav closed">
+                        <a href="home.html">Home</a>
+                        <a href="./html/talks.html">Talks</a>
+                        <a href="./html/rants.html">Rants</a>
+                        <a href="./html/refs.html">Refs</a>
+                        <a href="./html/misc.html">Misc</a>
                 </div>
-                <div class="center">
-                        <h5>Home</h5>
-                        <h2>h-j-k-l</h2>
-                        <hr>
+                <h1>Home</h1>
+                <h2>Links, talks, and <i>stuff</i></h2>
+                <p>
+                It looks like all the old gliders have sites like this these days, 
+                largely static pages with links to talks, snippets, and scripts.
+                Some of the stuff is theirs, some isn't. You know the type; that's
+                what this is.
+                </p>
 
-                        <p>The general idea is that this is a repository for talks that i
-                        want to refer back to or get around to watching with a few blogs, manuals
-                        and miscellaneous crap that i want to reference. I used to use github for
-                        this but their site seems a bit heavy for that.</p>
-
-                        <p>I also thought that i would use this as a place to write some essays
-                        and explanations of concepts that i want to better understand, kernel stuff,
-                        math, functional prog, nn, and lisp st00f. In reality though i think this
-                        is devolving into a place to whine about a particular kind of programmer
-                        that is present in a lot of professional environments these days.
-                        Links to my own stuff are non-white, other peoples work is in white(ish).
-                        </p>
-<pre><code class="c++">
-#include "stdio.h"
-#define e 3
-#define g (e/e)
-#define h ((g+e)/2)
-#define f (e-g-h)
-#define j (e*e-g)
-#define k (j-h)
-#define l(x) tab2[x]/h
-#define m(n,a) ((n&amp;(a))==(a))
-
-long tab1[]={ 989L,5L,26L,0L,88319L,123L,0L,9367L };
-int tab2[]={ 4,6,10,14,22,26,34,38,46,58,62,74,82,86 };
-
-main(m1,s) char *s; {
-    int a,b,c,d,o[k],n=(int)s;
-    if(m1==1){ char b[2*j+f-g]; main(l(h+e)+h+e,b); printf(b); }
-    else switch(m1-=h){
-        case f:
-            a=(b=(c=(d=g)&lt;&lt;g)&lt;&lt;g)&lt;&lt;g;
-            return(m(n,a|c)|m(n,b)|m(n,a|d)|m(n,c|d));
-        case h:
-            for(a=f;a&lt;j;++a)if(tab1[a]&&!(tab1[a]%((long)l(n))))return(a);
-        case g:
-            if(n&lt;h)return(g);
-            if(n&lt;j){n-=g;c='D';o[f]=h;o[g]=f;}
-            else{c='\r'-'\b';n-=j-g;o[f]=o[g]=g;}
-            if((b=n)&gt;=e)for(b=g&lt;&lt;g;b&lt;n;++b)o[b]=o[b-h]+o[b-g]+c;
-            return(o[b-g]%n+k-h);
-        default:
-            if(m1-=e) main(m1-g+e+h,s+g); else *(s+g)=f;
-            for(*s=a=f;a&lt;e;) *s=(*s&lt;&lt;e)|main(h+a++,(char *)m1);
-        }
-}
+<pre><code class="scheme">
+(define hello-world
+   (lambda ()
+         (begin
+	(write 'Hello-World)
+            (newline)
+	(hello-world))))
 </code></pre>
 
-                </div>
-                <div class="right">
-                </div>
-        </div>
-
-
-<!-- Lets try not to go fucking crazy with the scripts, have some fucking decency people -->
-<script src="expanding-rows.js"></script> 
-</body>
-
+        </body>
+</html>

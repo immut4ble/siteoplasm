@@ -1,0 +1,46 @@
+<html>
+        <head>
+                   <link rel="stylesheet" href="../css/style.css">
+                   <script src="../js/main.js"></script> 
+                   <link rel="stylesheet" href="../css/code.css">
+                   <script src="../js/highlight.pack.js"></script>
+                   <script>hljs.initHighlightingOnLoad();</script>
+        </head>
+        </head>
+        <body>
+                <div id="nav" class="nav closed">
+                        <a href="../home.html">Home</a>
+                        <a href="talks.html">Talks</a>
+                        <a href="rants.html">Rants</a>
+                        <a href="refs.html">Refs</a>
+                        <a href="misc.html">Misc</a>
+                </div>
+                <h1>Rants</h1>
+                <h2>letting off some steam</h2>
+                <p>
+                If this page looks this way its probably because you don't have access to the real content. 
+                Sorry about that. Don't try looking in the html, it's not display none'd or something, I'm
+                not (that much of) a moron. Anyway, i restrict access to the rants since they discuss real
+                people and real software in a fairly critical tone that i'd rather wasn't shared with <i>
+                absolutely</i> everyone. Thanks for coming though, heres an example of a Do loop construct
+                in FORTRAN77. Jesus, it looks better to me than modern C# / Java.
+                </p>
+<pre><code class="FORTRAN">
+PROGRAM MAIN
+INTEGER I, I_START, I_END, I_INC
+REAL A(100)
+
+I_START = 1
+I_END = 100
+I_INC = 1
+
+DO I = I_START, I_END, I_INC
+
+   A(I) = 0.0E0
+
+END DO
+
+END
+</code></pre>
+        </body>
+</html>

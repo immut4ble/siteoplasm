@@ -1,0 +1,188 @@
+<html>
+        <head>
+                   <link rel="stylesheet" href="../../css/style.css">
+                   <script src="../../js/main.js"></script> 
+                   <link rel="stylesheet" href="../../css/code.css">
+                   <script src="../../js/highlight.pack.js"></script>
+                   <script>hljs.initHighlightingOnLoad();</script>
+        </head>
+        </head>
+        <body>
+                <div id="nav" class="nav closed">
+                        <a href="../../home.html">Home</a>
+                        <a href="../talks.html">Talks</a>
+                        <a href="../rants.html">Rants</a>
+                        <a href="../refs.html">Refs</a>
+                        <a href="../misc.html">Misc</a>
+                </div>
+                <h1>Ruby Syntax</h1>
+                <h2>a reminder of the basic ruby syntax</h2>
+                <p>
+                Basically just a few examples of simple ruby syntax; assignment, 
+                functions, control flow etc. I find writing, and re-reading these
+                helps to put me in the mindset of a language even when it's really
+                simple like this. For some reason it just works a lot better when
+                it's mine even though the quality is worse than a lot of the cheatsheets
+                and things available online.
+                </p>
+<pre><code class="ruby">
+# My ruby basic syntax file.
+# the # character is the comment character in ruby.
+
+
+# Assignment and basic types
+# #################################################
+# This is assignement, much like other langs:
+x = 1
+
+# Strings are also typical:
+x = "Foo";
+
+# string literals:
+'string literal'
+# Escaped
+'Don\'t?'
+
+# Expression substitution:
+x, y, z = 1, 2, 3 
+puts "x is #{ x }."
+puts "x plus y is #{ x + y }."
+puts "x plus y plus z over 3 is #{ (x + y + z)/3 }."
+
+# Basic IO
+# the following is a decent reference for i/o
+# https://www.tutorialspoint.com/ruby/ruby_input_output.htm
+puts "Enter a value :"
+val = gets
+puts val
+
+# Control Flow
+# #################################################
+# it's intuitive, quite pretty.
+if x &gt; 2
+        # then do this.
+elsif x &lt;= 2 and x!=0
+        # otherwise this?
+else
+        # or this.
+end
+
+# oh yeah, you print like so:
+puts "hello world"
+
+# control flow gets pretty sweet in ruby tho:
+puts "hey" if true
+
+# oh and there is the opposite of if: unless!
+unless x &gt; 2
+    puts "this"
+else
+    puts "that"
+end
+
+# and you can do it like this aswell.
+puts "hey" unless false
+
+
+# Loopin'
+# #################################################
+# nice and simple.
+while true do
+    puts "aaaaah"
+end
+
+# Getting fun.
+puts "this" while true
+
+# even funner:
+begin
+   puts "foo"
+   puts "bar"
+end while true
+
+# and just like with if, we get the inverse! until:
+until false do
+    puts "aaaaah"
+end
+
+# for loops.
+for i in 0..5 #0..5 is an expression for 0 to 5 which is dope
+    puts "Value of local variable is #{i}" # the #{x} syntax is also dope.
+end
+
+# you've also got break to escape.
+while true do
+    # will get eval'd
+    break
+    # won't get eval'd
+end
+
+# next will skip to the next iterator which is fun.
+for i in 0..5
+   if i &lt; 2 then
+      next
+   end
+   puts "Value of local variable is #{i}"
+   # 2,3,4,5 will get put'ted. 1 will get skipped.
+end
+
+
+# Functions
+# #################################################
+
+# Just like python ruby uses def.
+def foo(a, b)
+    a + b
+end
+
+# Oh and the last statement is the return statement. Like LISP! 
+def foo()
+    a = 0
+    b = 1
+    c = 3
+end # Returns 3
+
+# Default params, no built in currying.
+def foo(a = 21, b = 12)
+    a + b
+end
+
+# if you want more complicated returns then return is still around.
+def foo()
+    return 1,2,3,4,5
+end
+
+# Variable length inputs, a nice touch.
+def foo(*test)
+    for i in 0...test.length
+        puts "#{test[i]}"
+    end
+end
+
+
+# Blocks
+# #################################################
+
+# yeild? wtf is yeild.
+# ..So blocks in ruby are chunks enclosed in {} which are
+# invoked from a similarly named method. ie:
+
+# method
+def test()
+    puts "method"
+    yeild
+    puts "back to method"
+end
+test { puts "now in the block" }
+
+# and it can take params.
+def test()
+    puts "method"
+    yeild 1
+    puts "back to method"
+    yeild 2
+end
+test {|i| puts "now in the block #{i}" }
+</code></pre>
+        </body>
+</html>
